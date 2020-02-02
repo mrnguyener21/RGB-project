@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vw;
+    background-color: #232323;
+}
+
+.theGreat{
+    display: flex;
+    justify-content: center;
+    margin:0;
+    background-color: steelblue;
+    color: white;
+
+}
+
+.RGB{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: row;
+    margin:0;
+    background-color: steelblue;
+    color: white;
+
+}
+.colorGame{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 0;
+    background-color:steelblue;
+    color: white;
+
+}
+.options{
+    display: flex;  
+    justify-content: space-around;
+    align-self: baseline;
+    flex-direction: row;
+    background-color: white;
+}
+
+.button{
+    background-color: white;
+    color: steelblue;
+    border: none;
+}
+.button:hover{
+    background-color: steelblue;
+    color: white;
+    transition: 0.75s;
+}
+
+.theColors{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;  why didn't this work?*/
+}
+
+.topRow{
+display: flex;
+flex-direction: row;
+justify-content: center;
+padding: 1%;
+
+}
+
+#color2{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.bottomRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#color5{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.color{
+    display: flex;
+    /* justify-content: center; */
+    border-radius:15px;  
+    height: 100px;
+    width: 100px;
+    background-color: white;
+}
