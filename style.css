@@ -56,6 +56,10 @@ body{
     transition: 0.75s;
 }
 
+.tryAgain{
+    background-color: red;
+    color: white;
+}
 .theColors{
     display: flex;
     flex-direction: column;
