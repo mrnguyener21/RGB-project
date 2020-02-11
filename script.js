@@ -44,15 +44,14 @@ blue.innerHTML = Math.floor(Math.random()*255)+1;
 
 
 //4 create the event for the "easy button" to hide or maybe even comment out the bottom row
-let theEasyButton = ()=> {
-    easy.addEventListener("click",function(){
-        theColors.classList.remove()
+let theEasyButton = easy.addEventListener("click",function(){
+        element.classList.remove("bottomRow")
     });
-    
-};
 
 //5 create the event for the "hard button" to reveal the bottom row 
-
+let theHardButton = hard.addEventListener("click",function(){
+    element.classList.add("bottomRow")
+});
 
 //6 create the event for the "new color button" to change the colors for the squares
 
