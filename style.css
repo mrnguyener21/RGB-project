@@ -1,107 +1,73 @@
-body{
-    margin: 0;
-    padding: 0;
-}
-
-.container{
-    width: 100vw;
-    height: 100vw;
+body {
     background-color: #232323;
-}
-/*the top section*/
-.theGreat{
-    display: flex;
-    justify-content: center;
-    margin:0;
-    background-color: steelblue;
-    color: white;
-
-}
-
-.RGB{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    flex-direction: row;
-    margin:0;
-    background-color: steelblue;
-    color: white;
-
-}
-.colorGame{
-    display: flex;
-    justify-content: center;
-    align-self: center;
     margin: 0;
-    background-color:steelblue;
+    font-family: "Montserrat", "Avenir";
+}
+
+.square {
+    width: 30%;
+    background: purple;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+    border-radius: 15%;
+    transition: background 0.6s;
+    --webkit-transition: background 0.6s;
+    --moz-transition: background 0.6s;
+}
+
+#container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+h1 {
     color: white;
-
+    line-height: 1.1;
+    text-align: center;
+    background-color: steelblue;
+    margin: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 20px 0;
 }
 
-/*the button section*/
-.options{
-    display: flex;  
-    justify-content: space-around;
-    align-self: baseline;
-    flex-direction: row;
+#colorDisplay {
+    font-size: 200%;
+}
+
+#message {
+    display: inline-block;
+    width: 20%;
+}
+
+#stripe {
     background-color: white;
+    height: 30px;
+    text-align: center;
 }
 
-.button{
-    background-color: white;
-    color: steelblue;
-    border: none;
-}
-.button:hover{
+.selected {
     background-color: steelblue;
     color: white;
-    transition: 0.75s;
 }
-.tryAgain{
-    background-color: maroon;
+
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size: inherit;
+    outline: none;
+}
+
+button:hover {
     color: white;
-}
-.correct{
-    background-color: green;
-    color: white;
-}
-
-/*The Square Section*/
-.theColors{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center;  why didn't this work?*/
-}
-
-.topRow{
-display: flex;
-flex-direction: row;
-justify-content: center;
-padding: 1%;
-
-}
-
-#color2{
-    margin-left: 1%;
-    margin-right: 1%;
-}
-
-.bottomRow{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-}
-
-#color5{
-    margin-left: 1%;
-    margin-right: 1%;
-}
-.color{
-    display: flex;
-    /* justify-content: center; */
-    border-radius:15px;  
-    height: 100px;
-    width: 100px;
-    background-color: white;
+    background-color: steelblue;
+    transition: all 0.3s;
+    --webkit-transition: background 0.3s;
+    --moz-transition: background 0.3s;
 }
