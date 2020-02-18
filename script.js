@@ -83,5 +83,5 @@ for (let i = 0; i < numberOfSquares; i++) {
 // add event listeners to modeButtons
 // modeButtons.addEventListener("click", () => modeButtons[0]? /* gotta connect this to generateColors(3)*/ : /*gotta connect this to generateColors(6)*/);
 // add event listener to resetButton 
-// resetButton.addEventListener("click", () =>/* create a function to reset the colors, match to generateColors(6), and to match to pickedColors*/);
+resetButton.addEventListener("click", reset);
 ``
