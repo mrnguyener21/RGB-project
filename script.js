@@ -51,9 +51,8 @@ const reset = () => {
         }    
     }
 }
-
 reset();
-
+colorDisplay.textContent = `${pickedColor}`;
 for (let i = 0; i < numberOfSquares; i++) {        
     squares[i].addEventListener("click", () => {
         const clickedColor = squares[i].style.background;
@@ -83,5 +82,10 @@ for (let i = 0; i < numberOfSquares; i++) {
 // add event listeners to modeButtons
 // modeButtons.addEventListener("click", () => modeButtons[0]? /* gotta connect this to generateColors(3)*/ : /*gotta connect this to generateColors(6)*/);
 // add event listener to resetButton 
-resetButton.addEventListener("click", reset);
-``
+resetButton.addEventListener("click",()=>{
+    message.textContent = '';
+    message.style.background = '#fffff';
+    // why won't reset run? the squares stay the same color
+});
+console.log(generateColor);
+console.log(pickedColor);
